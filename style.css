@@ -264,3 +264,38 @@ input:focus{
         height: 429px;
     }
 }
+
+@media only screen and (max-width: 397px){
+body{
+        height: 100%;
+        width: 300px;
+
+    }
+
+    #mainBox{
+        width: 300px;
+        margin-left: 0px;
+        height: 480px;
+        margin-right: 0px;
+    }
+
+    #value{
+        width: 210px;
+        margin-top: 05px;
+    }
+
+    #send{
+        padding-left: 64px;
+        margin-left: 230px;
+    
+    }
+
+    /* .fa{
+        margin-left: -45px;
+    } */
+
+    #messageBox{
+        height: 429px;
+        font-size: 25px;
+    }
+}
