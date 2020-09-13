@@ -234,24 +234,25 @@ input:focus{
 @media only screen and (max-width: 437px){
 
     body{
-        height: 180px;
+        height: auto;
 
     }
 
     #mainBox{
-        width: 380px;
-        margin-left: 5px;
+        width: 360px;
+        margin-left: 41px;
         height: 480px;
+        margin-right: 41px;
     }
 
     #value{
-        width: 300px;
+        width: 270px;
         margin-top: 05px;
     }
 
     #send{
         padding-left: 64px;
-        margin-left: 320px
+        margin-left: 290px
     
     }
 
