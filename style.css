@@ -73,6 +73,12 @@ body::-webkit-scrollbar-thumb{
 
 }
 
+.remove{    
+
+    font-size: 7px;
+    margin-left: 5px;
+}
+
 #send:hover{
     background-color: blue;
 
