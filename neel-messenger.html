@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neel Messenger</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../JS DOM/Messenger Message Task/bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCmcFVmNiHI59uBPqmFFpb2Qs2RMA6mkyQ",
+    authDomain: "neel-messenger.firebaseapp.com",
+    databaseURL: "https://neel-messenger.firebaseio.com",
+    projectId: "neel-messenger",
+    storageBucket: "neel-messenger.appspot.com",
+    messagingSenderId: "725556153502",
+    appId: "1:725556153502:web:f6b4e09f4182dcfeda7f8f",
+    measurementId: "G-0WJ5MHFE1N"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+</script>
+
+</head>
+<body >
+
+
+    <div class="container-fluid" >
+
+        <div  id="mainBox">
+
+            <div>
+                <h1> Neel Messenger <span id="dev"> &copy; Noor Sher Developer  </span> </h1> 
+            </div>
+
+            <div   id="messageBox">
+
+            </div>
+
+            <div>
+                <input type="text" id="value">
+                <input type="file" name="" id="myfile">
+                <button id="custom_button"> + </button>
+                <p id="send" onclick="send()">   <i class="fa fa-paper-plane" aria-hidden="true"></i>   </p>
+
+            </div>
+
+        </div>
+
+     
+    </div>
+    
+    
+</body>
+<script src="app.js"></script>
+</html>
