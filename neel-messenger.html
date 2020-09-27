@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neel Messenger</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../../JS DOM/Messenger Message Task/bootstrap-4.4.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -44,11 +43,20 @@
 
     <div class="container-fluid" >
 
+      
+
         <div  id="mainBox">
 
             <div>
-                <h1> Neel Messenger <span id="dev"> &copy; Noor Sher Developer  </span> </h1> 
+                <h1> Neel Messenger <span id="dev"> &copy; Noor Sher Developer  </span> 
+                    <div class="signout">
+                        <button onclick='signOut()' id="signout">Sign Out</button>
+                    </div>
+                 </h1> 
+              
             </div>
+
+            
 
             <div   id="messageBox">
 
