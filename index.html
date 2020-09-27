@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Login page   </title>
+    <title> Sign Up/ Sign In Page   </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../../JS DOM/Messenger Message Task/bootstrap-4.4.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -38,7 +37,8 @@
   
 </script>
 
-<script>
+
+<!-- <script>
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '{your-app-id}',
@@ -58,13 +58,33 @@
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-</script>
+</script> -->
 
 </head>
-<body>
+<body class="body2">
+
+  <div class="signup">
+  
+     <input type="email" id="email" placeholder="Enter your email">
+     <input type="password" name="" id="password" placeholder="Enter your password">
+     <br>
+     <button onclick="signUp()" id="signup"> SIGN UP </button>
+    
+  </div>
+
+  <div class="signin">
+
+    <input type="email" id="email_login" placeholder="Enter your email">
+    <input type="password" name="" id="password_login" placeholder="Enter your password">
+    <br>
+    <button onclick="signIn()" id="signin"> SIGN IN </button>
+    
+  </div>
 
     <div id="btndiv">
+
        <button id="loginBtn" onclick="facebook_login()"> Facebook Login</button>
+
    </div>
     
 </body>
