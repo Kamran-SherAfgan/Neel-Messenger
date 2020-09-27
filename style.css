@@ -37,6 +37,7 @@ body::-webkit-scrollbar-thumb{
     color: rgb(5, 5, 117);
     font-size: 20px;
     overflow-y: scroll;
+    padding-left: 5px;
    
 
 }
@@ -71,12 +72,6 @@ body::-webkit-scrollbar-thumb{
     border-radius: 20px;
     height: 40px;
 
-}
-
-.remove{    
-
-    font-size: 7px;
-    margin-left: 5px;
 }
 
 #send:hover{
@@ -125,9 +120,185 @@ h1{
     
 }
 
+#btndiv{
+    text-align: center;
+}
+
+#loginBtn{
+margin-top: 120px;
+width: 160px;
+height: 70px;
+background-color: white;
+color: blue;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 20px;
+font-weight: bold;
+outline: none;
+border-style: none;
+border-radius: 30px;
+box-shadow: 2px 0 20px inset blue;
+}
+
+.remove{    
+
+    font-size: 7px;
+    margin-left: 5px;
+}
+
+#loginBtn:active{
+    background-color: blue;
+    color: white;
+}
+
 input:focus{
     outline: none;
 }
+
+.body2{
+    background-color: blue;
+}
+
+.signup{
+    text-align: center;
+    box-shadow: 1px 0px 15px white;
+    width: 500px;
+    height: 150px;
+    margin: 60px 0px 0px 450px;
+    border-radius: 30px;
+
+}
+
+#email{
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    border-style: none;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#password{
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#signup{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 5px;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: blue;
+    outline: none;
+}
+
+#signup:active{
+    background-color: blue;
+    color: white;
+}
+
+.signin{
+    text-align: center;
+    box-shadow: 1px 1px 10px white;
+    margin: 100px 0px 0px 500px;
+    width: 500px;
+    height: 150px;
+    margin: 60px 0px 0px 450px;
+    border-radius: 30px;
+
+}
+
+#email_login{
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    border-style: none;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#password_login{
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#signin{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 5px;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: blue;
+    outline: none;
+}
+
+#signin:active{
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+
+
+.signout{
+margin: -55px 0px 3px 700px;
+}
+
+#signout{
+    /* border-style: none; */
+    border-radius: 30px;
+    border-color: rgb(5, 5, 146);
+    width: 60px;
+    height: 60px;
+    background-color: rgb(243, 241, 241);
+    color: rgb(5, 5, 146);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+    box-shadow: 0px 0px 10px gray;
+    
+}
+
+#signout:active{
+    background-color: rgb(5, 5, 146) ;
+    color: rgb(243, 241, 241);
+}
+
+
+
+
+
 @media only screen and (max-width: 965px){
 
     body{
@@ -147,9 +318,55 @@ input:focus{
         margin-left: 420px;
     }
 
+    #messageBox{
+    padding-left: 5px;
+
+    }
+
     .fa{
         margin-left: -45px;
     }
+
+    #signout{
+        width: 50px;
+        height: 50px;
+        margin: -25px 0px 3px -455px;
+    }
+
+    /* .signup{
+        text-align: center;
+        box-shadow: 1px 0px 15px white;
+        width: 500px;
+        height: 150px;
+        /* margin: 60px 0px 0px 0px; */
+        border-radius: 30px;
+        position: fixed;
+        left: -210px;
+        top: 40px;
+    
+    } */
+
+    /* .signin{
+        text-align: center;
+        box-shadow: 1px 1px 10px white;
+        margin: 100px 0px 0px 500px;
+        width: 500px;
+        height: 150px;
+        margin: 60px 0px 0px 0px;
+        border-radius: 30px;
+        position: fixed;
+        left: 240px;
+        top: 280px;
+    
+    } */
+
+    /* #btndiv{
+        text-align: center;
+        /* margin-left: 80px; */
+        position: fixed;
+        left: 410px;
+        top: 480px;
+    } */
 }
 
 /* Apply MEDIA QUERY */
@@ -174,7 +391,7 @@ input:focus{
 
     #value{
         width: 250px;
-        margin-top: 43px;
+        margin-top: 20px;
     }
 
     #send{
@@ -187,15 +404,52 @@ input:focus{
     }
 
     #messageBox{
-        height: 390px;
+        height: 410px;
         font-size: 30px;
+        padding-left: 5px;
+
+    }
+
+    #signout{
+        width: 30px;
+        height: 30px;
+        margin: 30px 0px 0px -738px;
+        font-size: 8px;
+    }
+
+    .signup{
+        text-align: center;
+        box-shadow: 1px 0px 15px white;
+        width: 500px;
+        height: 150px;
+        margin: 60px 0px 0px 80px;
+        border-radius: 30px;
+    
+    }
+
+    .signin{
+        text-align: center;
+        box-shadow: 1px 1px 10px white;
+        margin: 100px 0px 0px 500px;
+        width: 500px;
+        height: 150px;
+        margin: 60px 0px 0px 80px;
+        border-radius: 30px;
+    
+    }
+
+    #btndiv{
+        text-align: center;
+        /* margin-left: 80px; */
+        position: fixed;
+        left: 250px;
     }
 }
 
 @media only screen and (max-width: 500px){
 
     body{
-        height: 130px;
+        height: 30px;
     }
 
     #mainBox{
@@ -206,7 +460,7 @@ input:focus{
 
     #value{
         width: 190px;
-        margin-top: 30px;
+        margin-top: 35px;
     }
 
     #send{
@@ -217,10 +471,11 @@ input:focus{
 
     h1{
         color: rgb(5, 5, 146);
-        text-align: center;
+        /* text-align: ; */
         font-size: 20px;
         border-bottom: solid blue;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
+        padding-right: 30px;
     } 
 
     #dev{
@@ -234,13 +489,51 @@ input:focus{
     #messageBox{
         height: 410px;
         font-size: 30px;
-    }
-}
+        padding-left: 5px;
 
+    }
+
+    #signout{
+        width: 30px;
+        height: 30px;
+        margin: 37px 0px 0px -878px;
+        font-size: 8px;
+    }
+
+        .signup{
+            text-align: center;
+            box-shadow: 1px 0px 15px white;
+            width: 500px;
+            height: 150px;
+            margin: 60px 0px 0px 0px;
+            border-radius: 30px;
+        
+        }
+    
+        .signin{
+            text-align: center;
+            box-shadow: 1px 1px 10px white;
+            margin: 100px 0px 0px 500px;
+            width: 500px;
+            height: 150px;
+            margin: 60px 0px 0px 0px;
+            border-radius: 30px;
+        
+        }
+    
+        #btndiv{
+            text-align: center;
+            /* margin-left: 80px; */
+            position: fixed;
+            left: 160px;
+        }
+
+}
+ 
 @media only screen and (max-width: 437px){
 
     body{
-        height: auto;
+        height: 120px;
 
     }
 
@@ -253,12 +546,13 @@ input:focus{
 
     #value{
         width: 270px;
-        margin-top: 05px;
+        margin-top: 15px;
     }
 
     #send{
         padding-left: 64px;
-        margin-left: 290px
+        margin-left: 290px;
+        padding-top: 1px;
     
     }
 
@@ -268,11 +562,50 @@ input:focus{
 
     #messageBox{
         height: 429px;
+        font-size: 25px;
+        padding-left: 5px;
+
+    }
+
+    #signout{
+        width: 30px;
+        height: 30px;
+        margin: 37px 0px 0px -718px;
+        font-size: 8px;
+    }
+
+    .signup{
+        text-align: center;
+        box-shadow: 1px 0px 15px white;
+        width: 500px;
+        height: 150px;
+        margin: 60px 0px 0px 0px;
+        border-radius: 30px;
+    
+    }
+
+    .signin{
+        text-align: center;
+        box-shadow: 1px 1px 10px white;
+        margin: 100px 0px 0px 500px;
+        width: 500px;
+        height: 150px;
+        margin: 60px 0px 0px 0px;
+        border-radius: 30px;
+    
+    }
+
+    #btndiv{
+        text-align: center;
+        /* margin-left: 80px; */
+        position: fixed;
+        left: 160px;
     }
 }
 
 @media only screen and (max-width: 397px){
-body{
+
+    body{
         height: 100%;
         width: 300px;
 
@@ -303,5 +636,16 @@ body{
     #messageBox{
         height: 429px;
         font-size: 25px;
+        padding-left: 5px;
+    }
+
+    .signout{
+        margin: -55px 0px 10px 640px; 
+    }
+
+    #signout{
+        width: 30px;
+        height: 30px;
+        font-size: 8px;
     }
 }
