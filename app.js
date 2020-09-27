@@ -1,13 +1,14 @@
-function facebook_login() {
+ function facebook_login() {
   var provider = new firebase.auth.FacebookAuthProvider();
 
   firebase.auth().signInWithPopup(provider)
   .then(function(result) {
       var token = result.credential.accessToken;
       var user = result.user;
-      window.location = 'neel-messenger.html'
+      
      
-    }).catch(function(error) {
+    })
+    .catch(function(error) {
       var errorCode = error.code;
       var errorMessage = error.message;
       var email = error.email;
@@ -25,29 +26,55 @@ function facebook_login() {
 
 
 
-var loginBtn = document.getElementById('loginBtn');
 
 
 
 
 
-// let signUp = () => {
-//     var email = document.getElementById('email');
-// var password = document.getElementById('password');
+let signUp = () => {
+var email = document.getElementById('email');
+var password = document.getElementById('password');
 
 
-// firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
-// .then((result) => {
-//     console.log(result)
-// })
+firebase.auth().createUserWithEmailAndPassword(email.value, password.value)
+.then((result) => {
+    console.log(result)
+})
 
-// .catch(function(error) {
-//     // Handle Errors here.
-//     var errorCode = error.code;
-//     var errorMessage = error.message;
-//     // ...
-//   })
-// }
+.catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  })
+  email.value = "";
+  password.value = "";
+}
+
+function signIn(){
+  var email = document.getElementById('email_login');
+  var password = document.getElementById('password_login');
+firebase.auth().signInWithEmailAndPassword(email.value, password.value)
+.then(function (){
+  window.location = 'neel-messenger.html'
+})
+.catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
+}
+
+function signOut(){
+  firebase.auth().signOut()
+  .then(function() {
+    // Sign-out successful.
+    window.location = 'index.html'
+  }).catch(function(error) {
+    // An error happened.
+  });
+}
 
 
 function send() {
@@ -105,3 +132,7 @@ function deleteMessage(e) {
     firebase.database().ref('messages').remove()
     e.parentNode.remove()
 }
+
+
+
+
